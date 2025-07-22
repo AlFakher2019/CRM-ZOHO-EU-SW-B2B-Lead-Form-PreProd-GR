@@ -81,15 +81,15 @@
             <!-- progress bar -->
             <ul id="progressbar">
               <li class="active" id="number1" data-step="1">
-                <strong style="text-transform: uppercase"
-                  >ALLGEMEINE INFO</strong
-                >
+                <strong style="text-transform: uppercase">ALLGEMEIN</strong>
               </li>
               <li id="number2" data-step="2">
-                <strong style="text-transform: uppercase">ADRESSEN</strong>
+                <strong style="text-transform: uppercase">ADRESSE</strong>
               </li>
               <li id="number3" data-step="3">
-                <strong style="text-transform: uppercase">LIZENZEN</strong>
+                <strong style="text-transform: uppercase"
+                  >GESCHÄFTSDATEN</strong
+                >
               </li>
             </ul>
 
@@ -105,7 +105,7 @@
             <!-- step 1 -->
             <div class="step active" id="step1">
               <div class="zf-tempFrmWrapper zf-section">
-                <h2>Kontaktinformationen</h2>
+                <h2>Kontaktdaten</h2>
                 <p></p>
               </div>
               <div class="zf-tempFrmWrapper zf-name zf-namelarge">
@@ -149,7 +149,7 @@
               </div>
               <div class="zf-tempFrmWrapper zf-large">
                 <label class="zf-labelName">
-                  E-Mail
+                  Email-Adresse
                   <em class="zf-important"> *</em>
                 </label>
                 <div class="zf-tempContDiv">
@@ -179,7 +179,7 @@
                   <div class="zfCol">
                     <div class="zf-tempFrmWrapper zf-large">
                       <label class="zf-labelName">
-                        Mobiltelefon
+                        Mobil
                         <em class="zf-important"> *</em>
                       </label>
                       <div class="zf-tempContDiv">
@@ -187,7 +187,8 @@
                           <input
                             type="text"
                             name="SingleLine14"
-                            checktype="c1"
+                            checktype="c7"
+                            phoneFormat="1"
                             value=""
                             maxlength="255"
                             fieldType="1"
@@ -208,15 +209,15 @@
                   <div class="zfCol">
                     <div class="zf-tempFrmWrapper zf-large">
                       <label class="zf-labelName">
-                        Geschäftstelefon
-                        <em class="zf-important"> *</em>
+                        Festnetz
                       </label>
                       <div class="zf-tempContDiv">
                         <span>
                           <input
                             type="text"
                             name="SingleLine15"
-                            checktype="c1"
+                            checktype="c7"
+                            phoneFormat="1"
                             value=""
                             maxlength="255"
                             fieldType="1"
@@ -238,7 +239,7 @@
               </div>
 
               <div class="zf-tempFrmWrapper zf-section">
-                <h2>Unternehmensinformationen</h2>
+                <h2>Geschäftsdaten</h2>
                 <p></p>
               </div>
               <div class="zfgrid_Wrapper">
@@ -246,7 +247,7 @@
                   <div class="zfCol">
                     <div class="zf-tempFrmWrapper zf-large">
                       <label class="zf-labelName">
-                        Firmenname
+                        Name des Unternehmens
                         <em class="zf-important"> *</em>
                       </label>
                       <div class="zf-tempContDiv">
@@ -274,7 +275,8 @@
                   </div>
                   <div class="zfCol">
                     <div class="zf-tempFrmWrapper zf-large">
-                      <label class="zf-labelName"> Unternehmenstyp 
+                      <label class="zf-labelName">
+                        Unternehmenstyp
                         <em class="zf-important"> *</em>
                       </label>
                       <div class="zf-tempContDiv">
@@ -284,10 +286,20 @@
                           checktype="c1"
                         >
                           <option selected="true" value="">
-                            Bitte wählen Sie eine Option
+                            Bitte auswählen
                           </option>
-                          <option value="Consumer">Privatkunde</option>
-                          <option value="Business">Geschäftskunde</option>
+                          <option value="GmbH">
+                            Gesellschaft mit beschränkter Haftung - GmbH
+                          </option>
+                          <option value="Einzelunternehmen">
+                            Einzelunternehmen - e.K./Einzelkaufmann
+                          </option>
+                          <option value="UG">
+                            Unternehmergesellschaft – UG
+                          </option>
+                          <option value="Sonstiges">
+                            Sonstiges - GbR, KG, OHG, AG, usw.
+                          </option>
                         </select>
                         <p
                           id="Dropdown_error"
@@ -311,8 +323,8 @@
                     id="DecisionBox1"
                     name="DecisionBox1"
                   /><label for="DecisionBox1" class="zf-labelName">
-                    Ja, ich möchte über Neuigkeiten und exklusive Angebote zu
-                    Produkten, einschließlich Tabak, informiert werden.
+                    Ja, ich möchte über kostenlose Muster und exklusive Angebote
+                    informiert werden.
                   </label>
                   <p
                     id="DecisionBox1_error"
@@ -332,8 +344,7 @@
                     id="DecisionBox2"
                     name="DecisionBox2"
                   /><label for="DecisionBox2" class="zf-labelName">
-                    Mit der Kontoerstellung stimme ich den Allgemeinen
-                    Geschäftsbedingungen und der Datenschutzerklärung zu.
+                    Ich stimme den AGBs und Datenschutzbestimmungen zu.
                   </label>
                   <p
                     id="DecisionBox2_error"
@@ -352,7 +363,7 @@
                 onclick="zf_ValidateAndSubmit()"
                 name="Next"
               >
-                Weiter
+                WEITER
               </button>
               <div class="zf-tempFrmWrapper zf-note">
                 <label class="zf-descFld">
@@ -380,45 +391,36 @@
             <div class="zfgrid_Wrapper">
               <div class="zftwoColumn zfMultiColGrid">
                 <div class="zfCol">
-                    <div class="zf-tempFrmWrapper zf-large">
-                      <label class="zf-labelName">
-                        Adresstyp
-                        <em class="zf-important"> *</em>
-                      </label>
-                      <div class="zf-tempContDiv">
-                        <select
-                          class="zf-form-sBox"
-                          name="Dropdown1"
-                          checktype="c1"
-                        >
-                          <option selected="true" value="-Select-">
-                            Wählen Sie eine Option
-                          </option>
-                          <option value="Wohnen">Wohnen</option>
-                          <option value="Geschäftsstandort">
-                            Geschäftsstandort
-                          </option>
-                          <option value="Alternativer Unternehmensstandort">
-                            Alternativer Unternehmensstandort
-                          </option>
-                          <option value="Spediteur">Spediteur</option>
-                          <option value="Frachtabholzentrum">
-                            Frachtabholzentrum
-                          </option>
-                        </select>
-                        <p
-                          id="Dropdown1_error"
-                          class="zf-errorMessage"
-                          style="display: none"
-                        >
-                          Bitte geben Sie korrekte Daten ein
-                        </p>
-                      </div>
-                      <div class="zf-clearBoth"></div>
-                    </div>
                   <div class="zf-tempFrmWrapper zf-large">
                     <label class="zf-labelName">
-                      Stadt
+                      Adresstyp
+                      <em class="zf-important"> *</em>
+                    </label>
+                    <div class="zf-tempContDiv">
+                      <select
+                        class="zf-form-sBox"
+                        name="Dropdown1"
+                        checktype="c1"
+                      >
+                        <option selected="true" value="-Select-">
+                          Bitte auswählen
+                        </option>
+                        <option value="Wohnen">Hauptadresse</option>
+                        <option value="Geschäftsstandort">Filialadresse</option>
+                      </select>
+                      <p
+                        id="Dropdown1_error"
+                        class="zf-errorMessage"
+                        style="display: none"
+                      >
+                        Bitte geben Sie korrekte Daten ein
+                      </p>
+                    </div>
+                    <div class="zf-clearBoth"></div>
+                  </div>
+                  <div class="zf-tempFrmWrapper zf-large">
+                    <label class="zf-labelName">
+                      Ort
                       <em class="zf-important"> *</em>
                     </label>
                     <div class="zf-tempContDiv">
@@ -445,7 +447,7 @@
                   </div>
                   <div class="zf-tempFrmWrapper zf-large">
                     <label class="zf-labelName">
-                      Straßenadresse
+                      Straße
                       <em class="zf-important"> *</em>
                     </label>
                     <div class="zf-tempContDiv">
@@ -551,7 +553,7 @@
                     <div class="zf-clearBoth"></div>
                   </div>
                   <div class="zf-tempFrmWrapper zf-large">
-                    <label class="zf-labelName"> Straße 2 </label>
+                    <label class="zf-labelName"> Zusatz </label>
                     <div class="zf-tempContDiv">
                       <span>
                         <input
@@ -606,7 +608,7 @@
             </div>
 
             <div class="zf-tempFrmWrapper zf-section">
-              <h2>Lieferadresse</h2>
+              <h2>Versandadresse</h2>
               <p></p>
             </div>
             <div class="zfgrid_Wrapper">
@@ -620,7 +622,7 @@
                         id="DecisionBox"
                         name="DecisionBox"
                       /><label for="DecisionBox" class="zf-labelName">
-                        Wie Rechnungsadresse
+                        wie Rechnungsadresse
                       </label>
                       <p
                         id="DecisionBox_error"
@@ -652,18 +654,11 @@
                           checktype="c1"
                         >
                           <option selected="true" value="-Select-">
-                            Wählen Sie eine Option
+                            Bitte auswählen
                           </option>
-                          <option value="Wohnen">Wohnen</option>
+                          <option value="Wohnen">Hauptadresse</option>
                           <option value="Geschäftsstandort">
-                            Geschäftsstandort
-                          </option>
-                          <option value="Alternativer Unternehmensstandort">
-                            Alternativer Unternehmensstandort
-                          </option>
-                          <option value="Spediteur">Spediteur</option>
-                          <option value="Frachtabholzentrum">
-                            Frachtabholzentrum
+                            Filialadresse
                           </option>
                         </select>
                         <p
@@ -678,7 +673,7 @@
                     </div>
                     <div class="zf-tempFrmWrapper zf-large">
                       <label class="zf-labelName">
-                        Stadt
+                        Ort
                         <em class="zf-important"> *</em>
                       </label>
                       <div class="zf-tempContDiv">
@@ -787,7 +782,7 @@
                       <div class="zf-clearBoth"></div>
                     </div>
                     <div class="zf-tempFrmWrapper zf-large">
-                      <label class="zf-labelName"> Straße 2 </label>
+                      <label class="zf-labelName"> Zusatz </label>
                       <div class="zf-tempContDiv">
                         <span>
                           <input
@@ -858,7 +853,7 @@
 
           <div class="step">
             <div class="zf-tempFrmWrapper zf-section">
-              <h2>Hochladen von Nachweisdokumenten</h2>
+              <h2>Upload von Geschäftsdaten</h2>
               <p></p>
             </div>
             <div class="zf-tempFrmWrapper zf-note">
@@ -875,7 +870,7 @@
               <div class="zf-clearBoth"></div>
             </div>
             <div class="zf-tempFrmWrapper zf-section">
-              <h2>Umsatzsteuer-ID</h2>
+              <h2>Umsatzsteuer-Identifikationsnummer</h2>
               <p></p>
             </div>
             <div class="zf-tempFrmWrapper zf-note">
@@ -893,7 +888,7 @@
               <div class="zftwoColumn zfMultiColGrid">
                 <div class="zfCol">
                   <div class="zf-tempFrmWrapper zf-large">
-                    <label class="zf-labelName"> Lizenznummer </label>
+                    <label class="zf-labelName"> USt-ID </label>
                     <div class="zf-tempContDiv">
                       <span>
                         <input
@@ -922,7 +917,7 @@
             </div>
             <div class="zf-tempFrmWrapper">
               <label class="zf-labelName">
-                Datei-Upload
+                Upload
                 <em class="zf-important">*</em>
               </label>
               <div class="zf-tempContDiv">
@@ -939,14 +934,16 @@
               <div class="zf-clearBoth"></div>
             </div>
             <div class="zf-tempFrmWrapper zf-section">
-              <h2>Handelsregisternummer</h2>
+              <h2>Details zum Gewerbe</h2>
               <p></p>
             </div>
             <div class="zfgrid_Wrapper">
               <div class="zftwoColumn zfMultiColGrid">
                 <div class="zfCol">
                   <div class="zf-tempFrmWrapper zf-large">
-                    <label class="zf-labelName"> Lizenznummer </label>
+                    <label class="zf-labelName">
+                      Gewerbe- oder Handelsregisternummer
+                    </label>
                     <div class="zf-tempContDiv">
                       <span>
                         <input
@@ -975,7 +972,7 @@
             </div>
             <div class="zf-tempFrmWrapper">
               <label class="zf-labelName">
-                Datei-Upload
+                Upload
                 <em class="zf-important">*</em>
               </label>
               <div class="zf-tempContDiv">
@@ -992,7 +989,7 @@
               <div class="zf-clearBoth"></div>
             </div>
             <div class="zf-fmFooter">
-              <a type="button" class="prev">Zurück</a>
+              <a type="button" class="prev">Previous</a>
 
               <button type="submit" class="next" name="submit" id="submitBtn">
                 Absenden
@@ -1003,7 +1000,7 @@
       </form>
     </div>
 
-        <script type="text/javascript">
+    <script type="text/javascript">
       var dateAndMonthRegexFormateArray =
         zf_SetDateAndMonthRegexBasedOnDateFormate("dd-MMM-yyyy");
       var zf_DateRegex = new RegExp(dateAndMonthRegexFormateArray[0]);
@@ -1013,9 +1010,7 @@
         "Name_Last",
         "Email",
         "SingleLine14",
-        "SingleLine15",
         "SingleLine",
-        "DecisionBox2",
         "Dropdown",
         "Dropdown1",
         "SingleLine2",
@@ -1086,6 +1081,43 @@
           country: document.forms.form["SingleLine8"],
           zip: document.forms.form["SingleLine13"],
         };
+
+        // province, state hide
+
+        function handleStateReadonly(countryInput, stateInput, stateFieldId) {
+          const country = countryInput.value.trim().toLowerCase();
+
+          if (country === "germany" || country === "deutschland") {
+            stateInput.readOnly = true;
+            stateInput.value = "N/A";
+            stateInput.classList.add("readonly-disabled"); // disabled style
+
+            const index = zf_MandArray.indexOf(stateFieldId);
+            if (index !== -1) zf_MandArray.splice(index, 1);
+          } else {
+            stateInput.readOnly = false;
+            stateInput.value = "";
+            stateInput.classList.remove("readonly-disabled");
+
+            if (!zf_MandArray.includes(stateFieldId)) {
+              zf_MandArray.push(stateFieldId);
+            }
+          }
+        }
+
+        // live input events
+        billing.country.addEventListener("input", () => {
+          handleStateReadonly(billing.country, billing.state, "SingleLine6");
+        });
+        shipping.country.addEventListener("input", () => {
+          handleStateReadonly(shipping.country, shipping.state, "SingleLine12");
+        });
+
+        //  on load
+        handleStateReadonly(billing.country, billing.state, "SingleLine6");
+        handleStateReadonly(shipping.country, shipping.state, "SingleLine12");
+
+        /// state hide end
 
         function syncShippingWithBilling() {
           if (document.getElementById("DecisionBox").checked) {
