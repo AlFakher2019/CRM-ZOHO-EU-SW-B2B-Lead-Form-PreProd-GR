@@ -1,390 +1,440 @@
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Prepro - Geschäftskonto erstellen DE</title>
-    <link href="css/form.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <script src="js/validation.js"></script>
-    <style>
-      .step {
-        display: none;
-      }
-      .step.active {
-        display: block;
-      }
-      #step1 .prev {
-        visibility: hidden;
-      }
-     
-    </style>
-  </head>
-  <body class="zf-backgroundBg">
-    <!-- Change or deletion of the name attributes in the input tag will lead to empty values on record submission-->
-    <div class="zf-templateWidth">
-      <form
-        action="https://forms.zohopublic.eu/ookaportal/form/PreproGeschftskontoerstellenDE/formperma/f49hguY6QuXAFnyHgdbxhrBqxbuMTwX6wSyHcdbi9-U/htmlRecords/submit"
-        name="form"
-        method="POST"
-        onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();'
-        accept-charset="UTF-8"
-        enctype="multipart/form-data"
-        id="form"
-      >
-        <input
-          type="hidden"
-          name="zf_referrer_name"
-          value=""
-        /><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
-        <input
-          type="hidden"
-          name="zf_redirect_url"
-          value=""
-        /><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
-        <input
-          type="hidden"
-          name="zc_gad"
-          value=""
-        /><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
-        <div class="zf-templateWrapper">
-          <ul class="zf-tempHeadBdr">
-            <li class="zf-tempHeadContBdr">
-              <h2 class="zf-frmTitle">
-               
-              </h2>
-              <p class="zf-frmDesc"></p>
-              <div class="zf-clearBoth"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prepro - Geschäftskonto erstellen DE</title>
+  <link href="css/form.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="js/validation.js"></script>
+  <style>
+    .step {
+      display: none;
+    }
+
+    .step.active {
+      display: block;
+    }
+
+    #step1 .prev {
+      visibility: hidden;
+    }
+  </style>
+</head>
+
+<body class="zf-backgroundBg">
+  <!-- Change or deletion of the name attributes in the input tag will lead to empty values on record submission-->
+  <div class="zf-templateWidth">
+    <form
+      action="https://forms.zohopublic.eu/ookaportal/form/PreproGeschftskontoerstellenDE/formperma/f49hguY6QuXAFnyHgdbxhrBqxbuMTwX6wSyHcdbi9-U/htmlRecords/submit"
+      name="form" method="POST" onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();'
+      accept-charset="UTF-8" enctype="multipart/form-data" id="form">
+      <input type="hidden" name="zf_referrer_name"
+        value="" /><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+      <input type="hidden" name="zf_redirect_url"
+        value="" /><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+      <input type="hidden" name="zc_gad"
+        value="" /><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+      <div class="zf-templateWrapper">
+        <ul class="zf-tempHeadBdr">
+          <li class="zf-tempHeadContBdr">
+            <h2 class="zf-frmTitle">
+
+            </h2>
+            <p class="zf-frmDesc"></p>
+            <div class="zf-clearBoth"></div>
+          </li>
+          <!-- benefits tab -->
+
+        </ul>
+        <div class="zf-subContWrap zf-topAlign">
+          <!-- progress bar -->
+          <ul id="progressbar">
+            <li class="active" id="number1" data-step="1">
+              <strong style="text-transform: uppercase">ALLGEMEIN</strong>
             </li>
-            <!-- benefits tab -->
-            
+            <li id="number2" data-step="2">
+              <strong style="text-transform: uppercase">ADRESSE</strong>
+            </li>
+            <li id="number3" data-step="3">
+              <strong style="text-transform: uppercase">GESCHÄFTSDATEN</strong>
+            </li>
           </ul>
-          <div class="zf-subContWrap zf-topAlign">
-            <!-- progress bar -->
-            <ul id="progressbar">
-              <li class="active" id="number1" data-step="1">
-                <strong style="text-transform: uppercase">ALLGEMEIN</strong>
-              </li>
-              <li id="number2" data-step="2">
-                <strong style="text-transform: uppercase">ADRESSE</strong>
-              </li>
-              <li id="number3" data-step="3">
-                <strong style="text-transform: uppercase"
-                  >GESCHÄFTSDATEN</strong
-                >
-              </li>
-            </ul>
 
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-striped progress-bar-animated"
-                role="progressbar"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0"
+              aria-valuemax="100"></div>
+          </div>
+
+          <!-- step 1 -->
+          <div class="step active" id="step1">
+            <div class="zf-tempFrmWrapper zf-section">
+              <h2>Kontaktdaten</h2>
+              <p></p>
             </div>
+            <div class="zf-tempFrmWrapper zf-name zf-namelarge">
 
-            <!-- step 1 -->
-            <div class="step active" id="step1">
-              <div class="zf-tempFrmWrapper zf-section">
-                <h2>Kontaktdaten</h2>
-                <p></p>
+              <div class="zf-tempContDiv zf-twoType zf-flex">
+                <div class="zf-nameWrapper">
+                  <span>
+                    <label class="zf-labelName">
+                      Vorname
+                      <em class="zf-important"> *</em>
+                    </label>
+                    <input type="text" maxlength="255" name="Name_First" fieldType="7" placeholder="" />
+
+                  </span>
+                  <span>
+                    <label class="zf-labelName">
+                      Nachname
+                      <em class="zf-important"> *</em>
+                    </label>
+                    <input type="text" maxlength="255" name="Name_Last" fieldType="7" placeholder="" />
+
+                  </span>
+                  <div class="zf-clearBoth"></div>
+                </div>
+
               </div>
-              <div class="zf-tempFrmWrapper zf-name zf-namelarge">
-                
-                <div class="zf-tempContDiv zf-twoType zf-flex">
-                  <div class="zf-nameWrapper">
-                    <span>
-                      <label class="zf-labelName">
-                            Vorname
-                       <em class="zf-important"> *</em>
-                       </label>
-                      <input
-                        type="text"
-                        maxlength="255"
-                        name="Name_First"
-                        fieldType="7"
-                        placeholder=""
-                      />
-                      
-                    </span>
-                    <span>
-                      <label class="zf-labelName">
-                            Nachname
-                       <em class="zf-important"> *</em>
-                       </label>
-                      <input
-                        type="text"
-                        maxlength="255"
-                        name="Name_Last"
-                        fieldType="7"
-                        placeholder=""
-                      />
-                      
-                    </span>
+              <p id="Name_error" class="zf-errorMessage" style="display: none">
+                Bitte geben Sie korrekte Daten ein
+              </p>
+              <div class="zf-clearBoth"></div>
+            </div>
+            <div class="zf-tempFrmWrapper zf-large">
+              <label class="zf-labelName">
+                Email-Adresse
+                <em class="zf-important"> *</em>
+              </label>
+              <div class="zf-tempContDiv">
+                <span>
+                  <input type="text" name="Email" checktype="c5" value="" maxlength="255" fieldType="9"
+                    placeholder="" />
+                </span>
+                <p id="Email_error" class="zf-errorMessage" style="display: none">
+                  Bitte geben Sie korrekte Daten ein
+                </p>
+              </div>
+              <div class="zf-clearBoth"></div>
+            </div>
+            <div class="zfgrid_Wrapper">
+              <div class="zftwoColumn zfMultiColGrid">
+                <div class="zfCol">
+                  <div class="zf-tempFrmWrapper zf-large">
+                    <label class="zf-labelName">
+                      Mobil
+                      <em class="zf-important"> *</em>
+                    </label>
+                    <div class="zf-tempContDiv">
+                      <span>
+                        <input type="text" name="SingleLine14" checktype="c7" phoneFormat="1" value="" maxlength="255"
+                          fieldType="1" placeholder="" />
+                      </span>
+                      <p id="SingleLine14_error" class="zf-errorMessage" style="display: none">
+                        Bitte geben Sie korrekte Daten ein
+                      </p>
+                    </div>
                     <div class="zf-clearBoth"></div>
                   </div>
-                  
                 </div>
-                <p
-                    id="Name_error"
-                    class="zf-errorMessage"
-                    style="display: none"
-                  >
-                    Bitte geben Sie korrekte Daten ein
-                  </p>
-                <div class="zf-clearBoth"></div>
+                <div class="zfCol">
+                  <div class="zf-tempFrmWrapper zf-large">
+                    <label class="zf-labelName">
+                      Festnetz
+                    </label>
+                    <div class="zf-tempContDiv">
+                      <span>
+                        <input type="text" name="SingleLine15" checktype="c7" phoneFormat="1" value="" maxlength="255"
+                          fieldType="1" placeholder="" />
+                      </span>
+                      <p id="SingleLine15_error" class="zf-errorMessage" style="display: none">
+                        Bitte geben Sie korrekte Daten ein
+                      </p>
+                    </div>
+                    <div class="zf-clearBoth"></div>
+                  </div>
+                </div>
               </div>
-              <div class="zf-tempFrmWrapper zf-large">
-                <label class="zf-labelName">
-                  Email-Adresse
-                  <em class="zf-important"> *</em>
+            </div>
+
+            <div class="zf-tempFrmWrapper zf-section">
+              <h2>Geschäftsdaten</h2>
+              <p></p>
+            </div>
+            <div class="zfgrid_Wrapper">
+              <div class="zftwoColumn zfMultiColGrid">
+                <div class="zfCol">
+                  <div class="zf-tempFrmWrapper zf-large">
+                    <label class="zf-labelName">
+                      Name des Unternehmens
+                      <em class="zf-important"> *</em>
+                    </label>
+                    <div class="zf-tempContDiv">
+                      <span>
+                        <input type="text" name="SingleLine" checktype="c1" value="" maxlength="255" fieldType="1"
+                          placeholder="" />
+                      </span>
+                      <p id="SingleLine_error" class="zf-errorMessage" style="display: none">
+                        Bitte geben Sie korrekte Daten ein
+                      </p>
+                    </div>
+                    <div class="zf-clearBoth"></div>
+                  </div>
+                </div>
+                <div class="zfCol">
+                  <div class="zf-tempFrmWrapper zf-large">
+                    <label class="zf-labelName">
+                      Unternehmenstyp
+                      <em class="zf-important"> *</em>
+                    </label>
+                    <div class="zf-tempContDiv">
+                      <select class="zf-form-sBox" name="Dropdown" checktype="c1">
+                        <option selected="true" value="">
+                          Bitte auswählen
+                        </option>
+                        <option value="GmbH">
+                          Gesellschaft mit beschränkter Haftung - GmbH
+                        </option>
+                        <option value="Einzelunternehmen">
+                          Einzelunternehmen - e.K./Einzelkaufmann
+                        </option>
+                        <option value="UG">
+                          Unternehmergesellschaft – UG
+                        </option>
+                        <option value="Sonstiges">
+                          Sonstiges - GbR, KG, OHG, AG, usw.
+                        </option>
+                      </select>
+                      <p id="Dropdown_error" class="zf-errorMessage" style="display: none">
+                        Ungültiger Wert
+                      </p>
+                    </div>
+                    <div class="zf-clearBoth"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="zf-tempFrmWrapper zf-decesion">
+              <div class="zf-tempContDiv zf-check">
+                <input type="checkbox" checktype="c1" id="DecisionBox1" name="DecisionBox1" /><label for="DecisionBox1"
+                  class="zf-labelName">
+                  Ja, ich möchte über kostenlose Muster und exklusive Angebote
+                  informiert werden.
                 </label>
-                <div class="zf-tempContDiv">
-                  <span>
-                    <input
-                      type="text"
-                      name="Email"
-                      checktype="c5"
-                      value=""
-                      maxlength="255"
-                      fieldType="9"
-                      placeholder=""
-                    />
-                  </span>
-                  <p
-                    id="Email_error"
-                    class="zf-errorMessage"
-                    style="display: none"
-                  >
-                    Bitte geben Sie korrekte Daten ein
-                  </p>
-                </div>
-                <div class="zf-clearBoth"></div>
+                <p id="DecisionBox1_error" class="zf-errorMessage" style="display: none">
+                  Bitte geben Sie korrekte Daten ein
+                </p>
               </div>
-              <div class="zfgrid_Wrapper">
-                <div class="zftwoColumn zfMultiColGrid">
-                  <div class="zfCol">
-                    <div class="zf-tempFrmWrapper zf-large">
-                      <label class="zf-labelName">
-                        Mobil
-                        <em class="zf-important"> *</em>
-                      </label>
-                      <div class="zf-tempContDiv">
-                        <span>
-                          <input
-                            type="text"
-                            name="SingleLine14"
-                            checktype="c7"
-                            phoneFormat="1"
-                            value=""
-                            maxlength="255"
-                            fieldType="1"
-                            placeholder=""
-                          />
-                        </span>
-                        <p
-                          id="SingleLine14_error"
-                          class="zf-errorMessage"
-                          style="display: none"
-                        >
-                          Bitte geben Sie korrekte Daten ein
-                        </p>
-                      </div>
-                      <div class="zf-clearBoth"></div>
-                    </div>
-                  </div>
-                  <div class="zfCol">
-                    <div class="zf-tempFrmWrapper zf-large">
-                      <label class="zf-labelName">
-                        Festnetz
-                      </label>
-                      <div class="zf-tempContDiv">
-                        <span>
-                          <input
-                            type="text"
-                            name="SingleLine15"
-                            checktype="c7"
-                            phoneFormat="1"
-                            value=""
-                            maxlength="255"
-                            fieldType="1"
-                            placeholder=""
-                          />
-                        </span>
-                        <p
-                          id="SingleLine15_error"
-                          class="zf-errorMessage"
-                          style="display: none"
-                        >
-                          Bitte geben Sie korrekte Daten ein
-                        </p>
-                      </div>
-                      <div class="zf-clearBoth"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div class="zf-clearBoth"></div>
+            </div>
+            <div class="zf-tempFrmWrapper zf-decesion">
+              <div class="zf-tempContDiv zf-check">
+                <input type="checkbox" checktype="c1" id="DecisionBox2" name="DecisionBox2" />
 
-              <div class="zf-tempFrmWrapper zf-section">
-                <h2>Geschäftsdaten</h2>
-                <p></p>
-              </div>
-              <div class="zfgrid_Wrapper">
-                <div class="zftwoColumn zfMultiColGrid">
-                  <div class="zfCol">
-                    <div class="zf-tempFrmWrapper zf-large">
-                      <label class="zf-labelName">
-                        Name des Unternehmens
-                        <em class="zf-important"> *</em>
-                      </label>
-                      <div class="zf-tempContDiv">
-                        <span>
-                          <input
-                            type="text"
-                            name="SingleLine"
-                            checktype="c1"
-                            value=""
-                            maxlength="255"
-                            fieldType="1"
-                            placeholder=""
-                          />
-                        </span>
-                        <p
-                          id="SingleLine_error"
-                          class="zf-errorMessage"
-                          style="display: none"
-                        >
-                          Bitte geben Sie korrekte Daten ein
-                        </p>
-                      </div>
-                      <div class="zf-clearBoth"></div>
-                    </div>
-                  </div>
-                  <div class="zfCol">
-                    <div class="zf-tempFrmWrapper zf-large">
-                      <label class="zf-labelName">
-                        Unternehmenstyp
-                        <em class="zf-important"> *</em>
-                      </label>
-                      <div class="zf-tempContDiv">
-                        <select
-                          class="zf-form-sBox"
-                          name="Dropdown"
-                          checktype="c1"
-                        >
-                          <option selected="true" value="">
-                            Bitte auswählen
-                          </option>
-                          <option value="GmbH">
-                            Gesellschaft mit beschränkter Haftung - GmbH
-                          </option>
-                          <option value="Einzelunternehmen">
-                            Einzelunternehmen - e.K./Einzelkaufmann
-                          </option>
-                          <option value="UG">
-                            Unternehmergesellschaft – UG
-                          </option>
-                          <option value="Sonstiges">
-                            Sonstiges - GbR, KG, OHG, AG, usw.
-                          </option>
-                        </select>
-                        <p
-                          id="Dropdown_error"
-                          class="zf-errorMessage"
-                          style="display: none"
-                        >
-                          Ungültiger Wert
-                        </p>
-                      </div>
-                      <div class="zf-clearBoth"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <label for="DecisionBox2" class="zf-labelName">
+                  Ich stimme den
+                  <a href="https://www.shisha-world.com/content/agb" target="_blank" rel="noopener noreferrer"
+                    onclick="event.stopPropagation();">AGBs</a>
+                  und
+                  <a href="https://www.shisha-world.com/content/datenschutz" target="_blank" rel="noopener noreferrer"
+                    onclick="event.stopPropagation();">Datenschutzbestimmungen</a>
+                  zu.
+                </label>
 
-              <div class="zf-tempFrmWrapper zf-decesion">
-                <div class="zf-tempContDiv zf-check">
-                  <input
-                    type="checkbox"
-                    checktype="c1"
-                    id="DecisionBox1"
-                    name="DecisionBox1"
-                  /><label for="DecisionBox1" class="zf-labelName">
-                    Ja, ich möchte über kostenlose Muster und exklusive Angebote
-                    informiert werden.
+                <p id="DecisionBox2_error" class="zf-errorMessage" style="display: none">
+                  Bitte geben Sie korrekte Daten ein
+                </p>
+              </div>
+              <div class="zf-clearBoth"></div>
+            </div>
+
+            <button type="button" class="next" onclick="zf_ValidateAndSubmit()" name="Next">
+              WEITER
+            </button>
+            <div class="zf-tempFrmWrapper zf-note">
+              <label class="zf-descFld">
+                <div class="align-center" style="text-align: center">
+                  Sie haben bereits ein Konto?
+                  <a href="https://preprod.shisha-world.com/login" target="_blank" rel="noopener noreferrer">
+                    Anmelden
+                  </a>
+                  <br />
+                </div>
+              </label>
+              <div class="zf-clearBoth"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- sectiion 1 ends here -->
+        <!-- section 2 -->
+        <div class="step">
+          <div class="zf-tempFrmWrapper zf-section">
+            <h2>Rechnungsadresse</h2>
+            <p></p>
+          </div>
+          <div class="zfgrid_Wrapper">
+            <div class="zftwoColumn zfMultiColGrid">
+              <div class="zfCol">
+                <div class="zf-tempFrmWrapper zf-large">
+                  <label class="zf-labelName">
+                    Adresstyp
+                    <em class="zf-important"> *</em>
                   </label>
-                  <p
-                    id="DecisionBox1_error"
-                    class="zf-errorMessage"
-                    style="display: none"
-                  >
-                    Bitte geben Sie korrekte Daten ein
-                  </p>
-                </div>
-                <div class="zf-clearBoth"></div>
-              </div>
-              <div class="zf-tempFrmWrapper zf-decesion">
-                <div class="zf-tempContDiv zf-check">
-                  <input
-                    type="checkbox"
-                    checktype="c1"
-                    id="DecisionBox2"
-                    name="DecisionBox2"
-                  />
-                  
-                   <label for="DecisionBox2" class="zf-labelName">
-                       Ich stimme den 
-                       <a href="https://www.shisha-world.com/content/agb" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">AGBs</a>
-                                  und
-                          <a href="https://www.shisha-world.com/content/datenschutz" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">Datenschutzbestimmungen</a>
-                           zu.
-                      </label>
-                        
-                  <p
-                    id="DecisionBox2_error"
-                    class="zf-errorMessage"
-                    style="display: none"
-                  >
-                    Bitte geben Sie korrekte Daten ein
-                  </p>
-                </div>
-                <div class="zf-clearBoth"></div>
-              </div>
-
-              <button
-                type="button"
-                class="next"
-                onclick="zf_ValidateAndSubmit()"
-                name="Next"
-              >
-                WEITER
-              </button>
-              <div class="zf-tempFrmWrapper zf-note">
-                <label class="zf-descFld">
-                  <div class="align-center" style="text-align: center">
-                    Sie haben bereits ein Konto?
-                    <a href="https://preprod.shisha-world.com/login" target="_blank" rel="noopener noreferrer"
-                      >
-                        Anmelden
-                     </a>
-                     <br />
+                  <div class="zf-tempContDiv">
+                    <select class="zf-form-sBox" name="Dropdown1" checktype="c1">
+                      <option selected="true" value="-Select-">
+                        Bitte auswählen
+                      </option>
+                      <option value="Wohnen">Hauptadresse</option>
+                      <option value="Geschäftsstandort">Filialadresse</option>
+                    </select>
+                    <p id="Dropdown1_error" class="zf-errorMessage" style="display: none">
+                      Bitte geben Sie korrekte Daten ein
+                    </p>
                   </div>
-                </label>
-                <div class="zf-clearBoth"></div>
+                  <div class="zf-clearBoth"></div>
+                </div>
+                <div class="zf-tempFrmWrapper zf-large">
+                  <label class="zf-labelName">
+                    Ort
+                    <em class="zf-important"> *</em>
+                  </label>
+                  <div class="zf-tempContDiv">
+                    <span>
+                      <input type="text" name="SingleLine2" checktype="c1" value="" maxlength="255" fieldType="1"
+                        placeholder="" />
+                    </span>
+                    <p id="SingleLine2_error" class="zf-errorMessage" style="display: none">
+                      Bitte geben Sie korrekte Daten ein
+                    </p>
+                  </div>
+                  <div class="zf-clearBoth"></div>
+                </div>
+                <div class="zf-tempFrmWrapper zf-large">
+                  <label class="zf-labelName">
+                    Straße
+                    <em class="zf-important"> *</em>
+                  </label>
+                  <div class="zf-tempContDiv">
+                    <span>
+                      <input type="text" name="SingleLine4" checktype="c1" value="" maxlength="255" fieldType="1"
+                        placeholder="" />
+                    </span>
+                    <p id="SingleLine4_error" class="zf-errorMessage" style="display: none">
+                      Bitte geben Sie korrekte Daten ein
+                    </p>
+                  </div>
+                  <div class="zf-clearBoth"></div>
+                </div>
+                <div class="zf-tempFrmWrapper zf-large">
+                  <label class="zf-labelName">
+                    Bundesland/Region/Provinz
+                    <em class="zf-important"> *</em>
+                  </label>
+                  <div class="zf-tempContDiv">
+                    <span>
+                      <input type="text" name="SingleLine6" checktype="c1" value="" maxlength="255" fieldType="1"
+                        placeholder="" />
+                    </span>
+                    <p id="SingleLine6_error" class="zf-errorMessage" style="display: none">
+                      Bitte geben Sie korrekte Daten ein
+                    </p>
+                  </div>
+                  <div class="zf-clearBoth"></div>
+                </div>
+              </div>
+              <div class="zfCol">
+                <div class="zf-tempFrmWrapper zf-large">
+                  <label class="zf-labelName">
+                    Land
+                    <em class="zf-important"> *</em>
+                  </label>
+                  <div class="zf-tempContDiv">
+                    <select class="zf-form-sBox" name="Dropdown4" checktype="c1">
+                      <option selected="true" value="-Select-">-Select-</option>
+                      <option value="DEU">Germany</option>
+                      <option value="AUT">Austria</option>
+                    </select>
+                    <p id="Dropdown4_error" class="zf-errorMessage" style="display:none;">
+                      Invalid value</p>
+                  </div>
+                  <div class="zf-clearBoth"></div>
+                </div>
+                <div class="zf-tempFrmWrapper zf-large">
+                  <label class="zf-labelName"> EOID </label>
+                  <div class="zf-tempContDiv">
+                    <span>
+                      <input type="text" name="SingleLine3" checktype="c1" value="" maxlength="255" fieldType="1"
+                        placeholder="" />
+                    </span>
+                    <p id="SingleLine3_error" class="zf-errorMessage" style="display: none">
+                      Bitte geben Sie korrekte Daten ein
+                    </p>
+                  </div>
+                  <div class="zf-clearBoth"></div>
+                </div>
+                <div class="zf-tempFrmWrapper zf-large">
+                  <label class="zf-labelName"> Zusatz </label>
+                  <div class="zf-tempContDiv">
+                    <span>
+                      <input type="text" name="SingleLine5" checktype="c1" value="" maxlength="255" fieldType="1"
+                        placeholder="" />
+                    </span>
+                    <p id="SingleLine5_error" class="zf-errorMessage" style="display: none">
+                      Bitte geben Sie korrekte Daten ein
+                    </p>
+                  </div>
+                  <div class="zf-clearBoth"></div>
+                </div>
+                <div class="zf-tempFrmWrapper zf-large">
+                  <label class="zf-labelName">
+                    Postleitzahl
+                    <em class="zf-important"> *</em>
+                  </label>
+                  <div class="zf-tempContDiv">
+                    <span>
+                      <input type="text" name="SingleLine7" checktype="c1" value="" maxlength="255" fieldType="1"
+                        placeholder="" />
+                    </span>
+                    <p id="SingleLine7_error" class="zf-errorMessage" style="display: none">
+                      Bitte geben Sie korrekte Daten ein
+                    </p>
+                  </div>
+                  <div class="zf-clearBoth"></div>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- sectiion 1 ends here -->
-          <!-- section 2 -->
-          <div class="step">
-            <div class="zf-tempFrmWrapper zf-section">
-              <h2>Rechnungsadresse</h2>
-              <p></p>
+          <div class="zf-tempFrmWrapper zf-section">
+            <h2>Versandadresse</h2>
+            <p></p>
+          </div>
+          <div class="zfgrid_Wrapper">
+            <div class="zftwoColumn zfMultiColGrid">
+              <div class="zfCol">
+                <div class="zf-tempFrmWrapper zf-decesion">
+                  <div class="zf-tempContDiv billing-check">
+                    <input type="checkbox" checktype="c1" id="DecisionBox" name="DecisionBox" /><label for="DecisionBox"
+                      class="zf-labelName">
+                      wie Rechnungsadresse
+                    </label>
+                    <p id="DecisionBox_error" class="zf-errorMessage" style="display: none">
+                      Bitte geben Sie korrekte Daten ein
+                    </p>
+                  </div>
+                  <div class="zf-clearBoth"></div>
+                </div>
+              </div>
+              <div class="zfCol"></div>
             </div>
+          </div>
+          <div id="shippingSection">
             <div class="zfgrid_Wrapper">
               <div class="zftwoColumn zfMultiColGrid">
                 <div class="zfCol">
@@ -394,22 +444,16 @@
                       <em class="zf-important"> *</em>
                     </label>
                     <div class="zf-tempContDiv">
-                      <select
-                        class="zf-form-sBox"
-                        name="Dropdown1"
-                        checktype="c1"
-                      >
+                      <select class="zf-form-sBox" name="Dropdown2" checktype="c1">
                         <option selected="true" value="-Select-">
                           Bitte auswählen
                         </option>
                         <option value="Wohnen">Hauptadresse</option>
-                        <option value="Geschäftsstandort">Filialadresse</option>
+                        <option value="Geschäftsstandort">
+                          Filialadresse
+                        </option>
                       </select>
-                      <p
-                        id="Dropdown1_error"
-                        class="zf-errorMessage"
-                        style="display: none"
-                      >
+                      <p id="Dropdown2_error" class="zf-errorMessage" style="display: none">
                         Bitte geben Sie korrekte Daten ein
                       </p>
                     </div>
@@ -422,21 +466,10 @@
                     </label>
                     <div class="zf-tempContDiv">
                       <span>
-                        <input
-                          type="text"
-                          name="SingleLine2"
-                          checktype="c1"
-                          value=""
-                          maxlength="255"
-                          fieldType="1"
-                          placeholder=""
-                        />
+                        <input type="text" name="SingleLine9" checktype="c1" value="" maxlength="255" fieldType="1"
+                          placeholder="" />
                       </span>
-                      <p
-                        id="SingleLine2_error"
-                        class="zf-errorMessage"
-                        style="display: none"
-                      >
+                      <p id="SingleLine9_error" class="zf-errorMessage" style="display: none">
                         Bitte geben Sie korrekte Daten ein
                       </p>
                     </div>
@@ -449,21 +482,10 @@
                     </label>
                     <div class="zf-tempContDiv">
                       <span>
-                        <input
-                          type="text"
-                          name="SingleLine4"
-                          checktype="c1"
-                          value=""
-                          maxlength="255"
-                          fieldType="1"
-                          placeholder=""
-                        />
+                        <input type="text" name="SingleLine10" checktype="c1" value="" maxlength="255" fieldType="1"
+                          placeholder="" />
                       </span>
-                      <p
-                        id="SingleLine4_error"
-                        class="zf-errorMessage"
-                        style="display: none"
-                      >
+                      <p id="SingleLine10_error" class="zf-errorMessage" style="display: none">
                         Bitte geben Sie korrekte Daten ein
                       </p>
                     </div>
@@ -476,21 +498,10 @@
                     </label>
                     <div class="zf-tempContDiv">
                       <span>
-                        <input
-                          type="text"
-                          name="SingleLine6"
-                          checktype="c1"
-                          value=""
-                          maxlength="255"
-                          fieldType="1"
-                          placeholder=""
-                        />
+                        <input type="text" name="SingleLine12" checktype="c1" value="" maxlength="255" fieldType="1"
+                          placeholder="" />
                       </span>
-                      <p
-                        id="SingleLine6_error"
-                        class="zf-errorMessage"
-                        style="display: none"
-                      >
+                      <p id="SingleLine12_error" class="zf-errorMessage" style="display: none">
                         Bitte geben Sie korrekte Daten ein
                       </p>
                     </div>
@@ -504,48 +515,13 @@
                       <em class="zf-important"> *</em>
                     </label>
                     <div class="zf-tempContDiv">
-                      <span>
-                        <input
-                          type="text"
-                          name="SingleLine1"
-                          checktype="c1"
-                          value=""
-                          maxlength="255"
-                          fieldType="1"
-                          placeholder=""
-                        />
-                      </span>
-                      <p
-                        id="SingleLine1_error"
-                        class="zf-errorMessage"
-                        style="display: none"
-                      >
-                        Bitte geben Sie korrekte Daten ein
-                      </p>
-                    </div>
-                    <div class="zf-clearBoth"></div>
-                  </div>
-                  <div class="zf-tempFrmWrapper zf-large">
-                    <label class="zf-labelName"> EOID </label>
-                    <div class="zf-tempContDiv">
-                      <span>
-                        <input
-                          type="text"
-                          name="SingleLine3"
-                          checktype="c1"
-                          value=""
-                          maxlength="255"
-                          fieldType="1"
-                          placeholder=""
-                        />
-                      </span>
-                      <p
-                        id="SingleLine3_error"
-                        class="zf-errorMessage"
-                        style="display: none"
-                      >
-                        Bitte geben Sie korrekte Daten ein
-                      </p>
+                      <select class="zf-form-sBox" name="Dropdown5" checktype="c1">
+                        <option selected="true" value="-Select-">-Select-</option>
+                        <option value="DEU">Germany</option>
+                        <option value="AUT">Austria</option>
+                      </select>
+                      <p id="Dropdown5_error" class="zf-errorMessage" style="display:none;">
+                        Invalid value</p>
                     </div>
                     <div class="zf-clearBoth"></div>
                   </div>
@@ -553,21 +529,10 @@
                     <label class="zf-labelName"> Zusatz </label>
                     <div class="zf-tempContDiv">
                       <span>
-                        <input
-                          type="text"
-                          name="SingleLine5"
-                          checktype="c1"
-                          value=""
-                          maxlength="255"
-                          fieldType="1"
-                          placeholder=""
-                        />
+                        <input type="text" name="SingleLine11" checktype="c1" value="" maxlength="255" fieldType="1"
+                          placeholder="" />
                       </span>
-                      <p
-                        id="SingleLine5_error"
-                        class="zf-errorMessage"
-                        style="display: none"
-                      >
+                      <p id="SingleLine11_error" class="zf-errorMessage" style="display: none">
                         Bitte geben Sie korrekte Daten ein
                       </p>
                     </div>
@@ -580,546 +545,305 @@
                     </label>
                     <div class="zf-tempContDiv">
                       <span>
-                        <input
-                          type="text"
-                          name="SingleLine7"
-                          checktype="c1"
-                          value=""
-                          maxlength="255"
-                          fieldType="1"
-                          placeholder=""
-                        />
+                        <input type="text" name="SingleLine13" checktype="c1" value="" maxlength="255" fieldType="1"
+                          placeholder="" />
                       </span>
-                      <p
-                        id="SingleLine7_error"
-                        class="zf-errorMessage"
-                        style="display: none"
-                      >
+                      <p id="SingleLine13_error" class="zf-errorMessage" style="display: none">
                         Bitte geben Sie korrekte Daten ein
                       </p>
                     </div>
-                    <div class="zf-clearBoth"></div>
                   </div>
+                  <div class="zf-clearBoth"></div>
                 </div>
               </div>
-            </div>
-
-            <div class="zf-tempFrmWrapper zf-section">
-              <h2>Versandadresse</h2>
-              <p></p>
-            </div>
-            <div class="zfgrid_Wrapper">
-              <div class="zftwoColumn zfMultiColGrid">
-                <div class="zfCol">
-                  <div class="zf-tempFrmWrapper zf-decesion">
-                    <div class="zf-tempContDiv billing-check">
-                      <input
-                        type="checkbox"
-                        checktype="c1"
-                        id="DecisionBox"
-                        name="DecisionBox"
-                      /><label for="DecisionBox" class="zf-labelName">
-                        wie Rechnungsadresse
-                      </label>
-                      <p
-                        id="DecisionBox_error"
-                        class="zf-errorMessage"
-                        style="display: none"
-                      >
-                        Bitte geben Sie korrekte Daten ein
-                      </p>
-                    </div>
-                    <div class="zf-clearBoth"></div>
-                  </div>
-                </div>
-                <div class="zfCol"></div>
-              </div>
-            </div>
-            <div id="shippingSection">
-              <div class="zfgrid_Wrapper">
-                <div class="zftwoColumn zfMultiColGrid">
-                  <div class="zfCol">
-                    <div class="zf-tempFrmWrapper zf-large">
-                      <label class="zf-labelName">
-                        Adresstyp
-                        <em class="zf-important"> *</em>
-                      </label>
-                      <div class="zf-tempContDiv">
-                        <select
-                          class="zf-form-sBox"
-                          name="Dropdown2"
-                          checktype="c1"
-                        >
-                          <option selected="true" value="-Select-">
-                            Bitte auswählen
-                          </option>
-                          <option value="Wohnen">Hauptadresse</option>
-                          <option value="Geschäftsstandort">
-                            Filialadresse
-                          </option>
-                        </select>
-                        <p
-                          id="Dropdown2_error"
-                          class="zf-errorMessage"
-                          style="display: none"
-                        >
-                          Bitte geben Sie korrekte Daten ein
-                        </p>
-                      </div>
-                      <div class="zf-clearBoth"></div>
-                    </div>
-                    <div class="zf-tempFrmWrapper zf-large">
-                      <label class="zf-labelName">
-                        Ort
-                        <em class="zf-important"> *</em>
-                      </label>
-                      <div class="zf-tempContDiv">
-                        <span>
-                          <input
-                            type="text"
-                            name="SingleLine9"
-                            checktype="c1"
-                            value=""
-                            maxlength="255"
-                            fieldType="1"
-                            placeholder=""
-                          />
-                        </span>
-                        <p
-                          id="SingleLine9_error"
-                          class="zf-errorMessage"
-                          style="display: none"
-                        >
-                          Bitte geben Sie korrekte Daten ein
-                        </p>
-                      </div>
-                      <div class="zf-clearBoth"></div>
-                    </div>
-                    <div class="zf-tempFrmWrapper zf-large">
-                      <label class="zf-labelName">
-                        Straße
-                        <em class="zf-important"> *</em>
-                      </label>
-                      <div class="zf-tempContDiv">
-                        <span>
-                          <input
-                            type="text"
-                            name="SingleLine10"
-                            checktype="c1"
-                            value=""
-                            maxlength="255"
-                            fieldType="1"
-                            placeholder=""
-                          />
-                        </span>
-                        <p
-                          id="SingleLine10_error"
-                          class="zf-errorMessage"
-                          style="display: none"
-                        >
-                          Bitte geben Sie korrekte Daten ein
-                        </p>
-                      </div>
-                      <div class="zf-clearBoth"></div>
-                    </div>
-                    <div class="zf-tempFrmWrapper zf-large">
-                      <label class="zf-labelName">
-                        Bundesland/Region/Provinz
-                        <em class="zf-important"> *</em>
-                      </label>
-                      <div class="zf-tempContDiv">
-                        <span>
-                          <input
-                            type="text"
-                            name="SingleLine12"
-                            checktype="c1"
-                            value=""
-                            maxlength="255"
-                            fieldType="1"
-                            placeholder=""
-                          />
-                        </span>
-                        <p
-                          id="SingleLine12_error"
-                          class="zf-errorMessage"
-                          style="display: none"
-                        >
-                          Bitte geben Sie korrekte Daten ein
-                        </p>
-                      </div>
-                      <div class="zf-clearBoth"></div>
-                    </div>
-                  </div>
-                  <div class="zfCol">
-                    <div class="zf-tempFrmWrapper zf-large">
-                      <label class="zf-labelName">
-                        Land
-                        <em class="zf-important"> *</em>
-                      </label>
-                      <div class="zf-tempContDiv">
-                        <span>
-                          <input
-                            type="text"
-                            name="SingleLine8"
-                            checktype="c1"
-                            value=""
-                            maxlength="255"
-                            fieldType="1"
-                            placeholder=""
-                          />
-                        </span>
-                        <p
-                          id="SingleLine8_error"
-                          class="zf-errorMessage"
-                          style="display: none"
-                        >
-                          Bitte geben Sie korrekte Daten ein
-                        </p>
-                      </div>
-                      <div class="zf-clearBoth"></div>
-                    </div>
-                    <div class="zf-tempFrmWrapper zf-large">
-                      <label class="zf-labelName"> Zusatz </label>
-                      <div class="zf-tempContDiv">
-                        <span>
-                          <input
-                            type="text"
-                            name="SingleLine11"
-                            checktype="c1"
-                            value=""
-                            maxlength="255"
-                            fieldType="1"
-                            placeholder=""
-                          />
-                        </span>
-                        <p
-                          id="SingleLine11_error"
-                          class="zf-errorMessage"
-                          style="display: none"
-                        >
-                          Bitte geben Sie korrekte Daten ein
-                        </p>
-                      </div>
-                      <div class="zf-clearBoth"></div>
-                    </div>
-                    <div class="zf-tempFrmWrapper zf-large">
-                      <label class="zf-labelName">
-                        Postleitzahl
-                        <em class="zf-important"> *</em>
-                      </label>
-                      <div class="zf-tempContDiv">
-                        <span>
-                          <input
-                            type="text"
-                            name="SingleLine13"
-                            checktype="c1"
-                            value=""
-                            maxlength="255"
-                            fieldType="1"
-                            placeholder=""
-                          />
-                        </span>
-                        <p
-                          id="SingleLine13_error"
-                          class="zf-errorMessage"
-                          style="display: none"
-                        >
-                          Bitte geben Sie korrekte Daten ein
-                        </p>
-                      </div>
-                    </div>
-                    <div class="zf-clearBoth"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="footerbtns">
-              <a type="button" class="prev">Zurück</a>
-              <button
-                type="button"
-                class="next"
-                onclick="zf_ValidateAndSubmit()"
-                name="Next"
-              >
-                Weiter
-              </button>
             </div>
           </div>
-          <!-- section 2 end -->
-          <!-- section 3  -->
-
-          <div class="step">
-            <div class="zf-tempFrmWrapper zf-section">
-              <h2>Upload von Geschäftsdaten</h2>
-              <p></p>
-            </div>
-            <div class="zf-tempFrmWrapper zf-note">
-              <label class="zf-descFld">
-                <div>
-                  Vor der Aktivierung Ihres Kontos sind wir gesetzlich
-                  verpflichtet, Ihre Lizenz(en) zu überprüfen. Für eine
-                  schnellere Bearbeitung empfehlen wir, die für Ihr Bundesland
-                  erforderlichen Lizenzen direkt beim Absenden hochzuladen. Wenn
-                  Sie diesen Schritt überspringen, senden wir Ihnen einen Link
-                  zum Hochladen der Dokumente per E-Mail.<br />
-                </div>
-              </label>
-              <div class="zf-clearBoth"></div>
-            </div>
-            <div class="zf-tempFrmWrapper zf-section">
-              <h2>Umsatzsteuer-Identifikationsnummer</h2>
-              <p></p>
-            </div>
-            <div class="zf-tempFrmWrapper zf-note">
-              <label class="zf-descFld">
-                <div>
-                  TBD Dolor et pellentesque lorem montes lorem in. Aliquam
-                  rhoncus imperdiet dignissim feugiat aliquet. Mattis fermentum
-                  quam dui nunc. Faucibus scelerisque amet egestas vitae eros
-                  aenean ac pharetra sit cursus sociis ultrices.<br />
-                </div>
-              </label>
-              <div class="zf-clearBoth"></div>
-            </div>
-            <div class="zfgrid_Wrapper">
-              <div class="zftwoColumn zfMultiColGrid">
-                <div class="zfCol">
-                  <div class="zf-tempFrmWrapper zf-large">
-                    <label class="zf-labelName"> USt-ID </label>
-                    <div class="zf-tempContDiv">
-                      <span>
-                        <input
-                          type="text"
-                          name="SingleLine16"
-                          checktype="c1"
-                          value=""
-                          maxlength="255"
-                          fieldType="1"
-                          placeholder=""
-                        />
-                      </span>
-                      <p
-                        id="SingleLine16_error"
-                        class="zf-errorMessage"
-                        style="display: none"
-                      >
-                        Bitte geben Sie korrekte Daten ein
-                      </p>
-                    </div>
-                    <div class="zf-clearBoth"></div>
-                  </div>
-                </div>
-                <div class="zfCol"></div>
-              </div>
-            </div>
-            <div class="zf-tempFrmWrapper">
-              <label class="zf-labelName">
-                Upload
-                <em class="zf-important">*</em>
-              </label>
-              <div class="zf-tempContDiv">
-                <input type="file" name="FileUpload" checktype="c1" />
-
-                <p
-                  id="FileUpload_error"
-                  class="zf-errorMessage"
-                  style="display: none"
-                >
-                  Bitte wählen Sie eine Datei für dieses Feld aus.
-                </p>
-              </div>
-              <div class="zf-clearBoth"></div>
-            </div>
-            <div class="zf-tempFrmWrapper zf-section">
-              <h2>Details zum Gewerbe</h2>
-              <p></p>
-            </div>
-            <div class="zfgrid_Wrapper">
-              <div class="zftwoColumn zfMultiColGrid">
-                <div class="zfCol">
-                  <div class="zf-tempFrmWrapper zf-large">
-                    <label class="zf-labelName">
-                      Gewerbe- oder Handelsregisternummer
-                    </label>
-                    <div class="zf-tempContDiv">
-                      <span>
-                        <input
-                          type="text"
-                          name="SingleLine17"
-                          checktype="c1"
-                          value=""
-                          maxlength="255"
-                          fieldType="1"
-                          placeholder=""
-                        />
-                      </span>
-                      <p
-                        id="SingleLine17_error"
-                        class="zf-errorMessage"
-                        style="display: none"
-                      >
-                        Bitte geben Sie korrekte Daten ein
-                      </p>
-                    </div>
-                    <div class="zf-clearBoth"></div>
-                  </div>
-                </div>
-                <div class="zfCol"></div>
-              </div>
-            </div>
-            <div class="zf-tempFrmWrapper">
-              <label class="zf-labelName">
-                Upload
-                <em class="zf-important">*</em>
-              </label>
-              <div class="zf-tempContDiv">
-                <input type="file" name="FileUpload1" checktype="c1" />
-                <p
-                  id="FileUpload1_error"
-                  class="zf-errorMessage"
-                  style="display: none"
-                >
-                  Bitte wählen Sie eine Datei für dieses Feld aus.
-                </p>
-              </div>
-
-              <div class="zf-clearBoth"></div>
-            </div>
-            <div class="footerbtns">
-              <a type="button" class="prev">Zurück</a>
-
-              <button type="submit" class="next" name="submit" id="submitBtn" disabled>
-                Absenden
-              </button>
-            </div>
+          <div class="footerbtns">
+            <a type="button" class="prev">Zurück</a>
+            <button type="button" class="next" onclick="zf_ValidateAndSubmit()" name="Next">
+              Weiter
+            </button>
           </div>
         </div>
-      </form>
-    </div>
+        <!-- section 2 end -->
+        <!-- section 3  -->
 
-    <script type="text/javascript">
-      var dateAndMonthRegexFormateArray =
-        zf_SetDateAndMonthRegexBasedOnDateFormate("dd-MMM-yyyy");
-      var zf_DateRegex = new RegExp(dateAndMonthRegexFormateArray[0]);
-      var zf_MonthYearRegex = new RegExp(dateAndMonthRegexFormateArray[1]);
-      var zf_MandArray = [
-        "Name_First",
-        "Name_Last",
-        "Email",
-        "SingleLine14",
-        "SingleLine",
-        "Dropdown",
-        "Dropdown1",
-        "SingleLine2",
-        "SingleLine4",
-        "SingleLine6",
-        "SingleLine1",
-        "SingleLine7",
-        "Dropdown2",
-        "SingleLine9",
-        "SingleLine10",
-        "SingleLine12",
-        "SingleLine8",
-        "SingleLine13",
-        "FileUpload",
-        "FileUpload1",
-        "DecisionBox2",
-      ];
-      var zf_FieldArray = [
-        "Name_First",
-        "Name_Last",
-        "Email",
-        "SingleLine14",
-        "SingleLine15",
-        "SingleLine",
-        "Dropdown",
-        "TermsConditions",
-        "TermsConditions1",
-        "Dropdown1",
-        "SingleLine2",
-        "SingleLine4",
-        "SingleLine6",
-        "SingleLine1",
-        "SingleLine3",
-        "SingleLine5",
-        "SingleLine7",
-        "DecisionBox",
-        "DecisionBox2",
-        "Dropdown2",
-        "SingleLine9",
-        "SingleLine10",
-        "SingleLine12",
-        "SingleLine8",
-        "SingleLine11",
-        "SingleLine13",
-        "SingleLine16",
-        "FileUpload",
-        "SingleLine17",
-        "FileUpload1",
-      ];
-      var isSalesIQIntegrationEnabled = false;
-      var salesIQFieldsArray = [];
+        <div class="step">
+          <div class="zf-tempFrmWrapper zf-section">
+            <h2>Upload von Geschäftsdaten</h2>
+            <p></p>
+          </div>
+          <div class="zf-tempFrmWrapper zf-note">
+            <label class="zf-descFld">
+              <div>
+                Vor der Aktivierung Ihres Kontos sind wir gesetzlich
+                verpflichtet, Ihre Lizenz(en) zu überprüfen. Für eine
+                schnellere Bearbeitung empfehlen wir, die für Ihr Bundesland
+                erforderlichen Lizenzen direkt beim Absenden hochzuladen. Wenn
+                Sie diesen Schritt überspringen, senden wir Ihnen einen Link
+                zum Hochladen der Dokumente per E-Mail.<br />
+              </div>
+            </label>
+            <div class="zf-clearBoth"></div>
+          </div>
+          <div class="zf-tempFrmWrapper zf-section">
+            <h2>Umsatzsteuer-Identifikationsnummer</h2>
+            <p></p>
+          </div>
+          <div class="zf-tempFrmWrapper zf-note">
+            <label class="zf-descFld">
+              <div>
+                TBD Dolor et pellentesque lorem montes lorem in. Aliquam
+                rhoncus imperdiet dignissim feugiat aliquet. Mattis fermentum
+                quam dui nunc. Faucibus scelerisque amet egestas vitae eros
+                aenean ac pharetra sit cursus sociis ultrices.<br />
+              </div>
+            </label>
+            <div class="zf-clearBoth"></div>
+          </div>
+          <div class="zfgrid_Wrapper">
+            <div class="zftwoColumn zfMultiColGrid">
+              <div class="zfCol">
+                <div class="zf-tempFrmWrapper zf-large">
+                  <label class="zf-labelName"> USt-ID </label>
+                  <div class="zf-tempContDiv">
+                    <span>
+                      <input type="text" name="SingleLine16" checktype="c1" value="" maxlength="255" fieldType="1"
+                        placeholder="" />
+                    </span>
+                    <p id="SingleLine16_error" class="zf-errorMessage" style="display: none">
+                      Bitte geben Sie korrekte Daten ein
+                    </p>
+                  </div>
+                  <div class="zf-clearBoth"></div>
+                </div>
+              </div>
+              <div class="zfCol"></div>
+            </div>
+          </div>
+          <div class="zf-tempFrmWrapper">
+            <label class="zf-labelName">
+              Upload
+              <em class="zf-important">*</em>
+            </label>
+            <div class="zf-tempContDiv">
+              <input type="file" name="FileUpload" checktype="c1" />
 
-      document.addEventListener("DOMContentLoaded", function () {
-        const billing = {
-          addressType: document.forms.form["Dropdown1"],
-          city: document.forms.form["SingleLine2"],
-          street1: document.forms.form["SingleLine4"],
-          street2: document.forms.form["SingleLine5"],
-          state: document.forms.form["SingleLine6"],
-          country: document.forms.form["SingleLine1"],
-          zip: document.forms.form["SingleLine7"],
-        };
+              <p id="FileUpload_error" class="zf-errorMessage" style="display: none">
+                Bitte wählen Sie eine Datei für dieses Feld aus.
+              </p>
+            </div>
+            <div class="zf-clearBoth"></div>
+          </div>
+          <div class="zf-tempFrmWrapper zf-section">
+            <h2>Details zum Gewerbe</h2>
+            <p></p>
+          </div>
+          <div class="zfgrid_Wrapper">
+            <div class="zftwoColumn zfMultiColGrid">
+              <div class="zfCol">
+                <div class="zf-tempFrmWrapper zf-large">
+                  <label class="zf-labelName">
+                    Gewerbe- oder Handelsregisternummer
+                  </label>
+                  <div class="zf-tempContDiv">
+                    <span>
+                      <input type="text" name="SingleLine17" checktype="c1" value="" maxlength="255" fieldType="1"
+                        placeholder="" />
+                    </span>
+                    <p id="SingleLine17_error" class="zf-errorMessage" style="display: none">
+                      Bitte geben Sie korrekte Daten ein
+                    </p>
+                  </div>
+                  <div class="zf-clearBoth"></div>
+                </div>
+              </div>
+              <div class="zfCol"></div>
+            </div>
+          </div>
+          <div class="zf-tempFrmWrapper">
+            <label class="zf-labelName">
+              Upload
+              <em class="zf-important">*</em>
+            </label>
+            <div class="zf-tempContDiv">
+              <input type="file" name="FileUpload1" checktype="c1" />
+              <p id="FileUpload1_error" class="zf-errorMessage" style="display: none">
+                Bitte wählen Sie eine Datei für dieses Feld aus.
+              </p>
+            </div>
 
-        const shipping = {
-          addressType: document.forms.form["Dropdown2"],
-          city: document.forms.form["SingleLine9"],
-          street1: document.forms.form["SingleLine10"],
-          street2: document.forms.form["SingleLine11"],
-          state: document.forms.form["SingleLine12"],
-          country: document.forms.form["SingleLine8"],
-          zip: document.forms.form["SingleLine13"],
-        };
+            <div class="zf-clearBoth"></div>
+          </div>
+          <div class="footerbtns">
+            <a type="button" class="prev">Zurück</a>
 
-        // province, state hide
+            <button type="submit" class="next" name="submit" id="submitBtn" disabled>
+              Absenden
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
 
-        function handleStateReadonly(countryInput, stateInput, stateFieldId) {
-          const country = countryInput.value.trim().toLowerCase();
+  <script type="text/javascript">
+    var dateAndMonthRegexFormateArray =
+      zf_SetDateAndMonthRegexBasedOnDateFormate("dd-MMM-yyyy");
+    var zf_DateRegex = new RegExp(dateAndMonthRegexFormateArray[0]);
+    var zf_MonthYearRegex = new RegExp(dateAndMonthRegexFormateArray[1]);
+    var zf_MandArray = [
+      "Name_First",
+      "Name_Last",
+      "Email",
+      "SingleLine14",
+      "SingleLine",
+      "Dropdown",
+      "Dropdown1",
+      "SingleLine2",
+      "SingleLine4",
+      "SingleLine6",
+      "Dropdown4",
+      "SingleLine7",
+      "Dropdown2",
+      "SingleLine9",
+      "SingleLine10",
+      "SingleLine12",
+      "Dropdown5",
+      "SingleLine13",
+      "FileUpload",
+      "FileUpload1",
+      "DecisionBox2",
+    ];
+    var zf_FieldArray = [
+      "Name_First",
+      "Name_Last",
+      "Email",
+      "SingleLine14",
+      "SingleLine15",
+      "SingleLine",
+      "Dropdown",
+      "TermsConditions",
+      "TermsConditions1",
+      "Dropdown1",
+      "SingleLine2",
+      "SingleLine4",
+      "SingleLine6",
+      "Dropdown4",
+      "SingleLine3",
+      "SingleLine5",
+      "SingleLine7",
+      "DecisionBox",
+      "DecisionBox2",
+      "Dropdown2",
+      "SingleLine9",
+      "SingleLine10",
+      "SingleLine12",
+      "Dropdown5",
+      "SingleLine11",
+      "SingleLine13",
+      "SingleLine16",
+      "FileUpload",
+      "SingleLine17",
+      "FileUpload1",
+    ];
+    var isSalesIQIntegrationEnabled = false;
+    var salesIQFieldsArray = [];
 
-          if (country === "germany" || country === "deutschland") {
-            stateInput.readOnly = true;
-            stateInput.value = "N/A";
-            stateInput.classList.add("readonly-disabled"); // disabled style
+    document.addEventListener("DOMContentLoaded", function () {
+      const billing = {
+        addressType: document.forms.form["Dropdown1"],
+        city: document.forms.form["SingleLine2"],
+        street1: document.forms.form["SingleLine4"],
+        street2: document.forms.form["SingleLine5"],
+        state: document.forms.form["SingleLine6"],
+        country: document.forms.form["Dropdown4"],
+        zip: document.forms.form["SingleLine7"],
+      };
 
-            const index = zf_MandArray.indexOf(stateFieldId);
-            if (index !== -1) zf_MandArray.splice(index, 1);
-          } else {
-            stateInput.readOnly = false;
-            stateInput.value = "";
-            stateInput.classList.remove("readonly-disabled");
+      const shipping = {
+        addressType: document.forms.form["Dropdown2"],
+        city: document.forms.form["SingleLine9"],
+        street1: document.forms.form["SingleLine10"],
+        street2: document.forms.form["SingleLine11"],
+        state: document.forms.form["SingleLine12"],
+        country: document.forms.form["Dropdown5"],
+        zip: document.forms.form["SingleLine13"],
+      };
 
-            if (!zf_MandArray.includes(stateFieldId)) {
-              zf_MandArray.push(stateFieldId);
-            }
+      // province, state hide
+
+      function handleStateReadonly(countryInput, stateInput, stateFieldId) {
+        const country = countryInput.value.trim().toLowerCase();
+
+        if (country === "germany" || country === "deutschland") {
+          stateInput.readOnly = true;
+          stateInput.value = "N/A";
+          stateInput.classList.add("readonly-disabled"); // disabled style
+
+          const index = zf_MandArray.indexOf(stateFieldId);
+          if (index !== -1) zf_MandArray.splice(index, 1);
+        } else {
+          stateInput.readOnly = false;
+          stateInput.value = "";
+          stateInput.classList.remove("readonly-disabled");
+
+          if (!zf_MandArray.includes(stateFieldId)) {
+            zf_MandArray.push(stateFieldId);
           }
         }
+      }
 
-        // live input events
-        billing.country.addEventListener("input", () => {
-          handleStateReadonly(billing.country, billing.state, "SingleLine6");
-        });
-        shipping.country.addEventListener("input", () => {
-          handleStateReadonly(shipping.country, shipping.state, "SingleLine12");
-        });
-
-        //  on load
+      // live input events
+      billing.country.addEventListener("input", () => {
         handleStateReadonly(billing.country, billing.state, "SingleLine6");
+      });
+      shipping.country.addEventListener("input", () => {
         handleStateReadonly(shipping.country, shipping.state, "SingleLine12");
+      });
 
-        /// state hide end
+      //  on load
+      handleStateReadonly(billing.country, billing.state, "SingleLine6");
+      handleStateReadonly(shipping.country, shipping.state, "SingleLine12");
 
-        function syncShippingWithBilling() {
-          if (document.getElementById("DecisionBox").checked) {
+      /// state hide end
+
+      function syncShippingWithBilling() {
+        if (document.getElementById("DecisionBox").checked) {
+          shipping.addressType.value = billing.addressType.value;
+          shipping.city.value = billing.city.value;
+          shipping.street1.value = billing.street1.value;
+          shipping.street2.value = billing.street2.value;
+          shipping.state.value = billing.state.value;
+          shipping.country.value = billing.country.value;
+          shipping.zip.value = billing.zip.value;
+        }
+      }
+
+      ["input", "change"].forEach((eventType) => {
+        [
+          billing.addressType,
+          billing.city,
+          billing.street1,
+          billing.street2,
+          billing.state,
+          billing.country,
+          billing.zip,
+        ].forEach((field) => {
+          field.addEventListener(eventType, syncShippingWithBilling);
+        });
+      });
+
+      //address toggle
+      document
+        .getElementById("DecisionBox")
+        .addEventListener("change", function () {
+          const isChecked = this.checked;
+
+          // Shipping section
+          const shippingSection = document.getElementById("shippingSection");
+
+          if (isChecked) {
             shipping.addressType.value = billing.addressType.value;
             shipping.city.value = billing.city.value;
             shipping.street1.value = billing.street1.value;
@@ -1127,247 +851,214 @@
             shipping.state.value = billing.state.value;
             shipping.country.value = billing.country.value;
             shipping.zip.value = billing.zip.value;
+
+            // Hide shipping section
+            if (shippingSection) {
+              shippingSection.style.display = "none";
+            }
+          } else {
+            // Clear shipping values
+            shipping.addressType.value = "";
+            shipping.city.value = "";
+            shipping.street1.value = "";
+            shipping.street2.value = "";
+            shipping.state.value = "";
+            shipping.country.value = "";
+            shipping.zip.value = "";
+
+            // Showing shipping section
+            if (shippingSection) {
+              shippingSection.style.display = "block";
+            }
           }
-        }
-
-        ["input", "change"].forEach((eventType) => {
-          [
-            billing.addressType,
-            billing.city,
-            billing.street1,
-            billing.street2,
-            billing.state,
-            billing.country,
-            billing.zip,
-          ].forEach((field) => {
-            field.addEventListener(eventType, syncShippingWithBilling);
-          });
         });
 
-        //address toggle
-        document
-          .getElementById("DecisionBox")
-          .addEventListener("change", function () {
-            const isChecked = this.checked;
+      //###validations
+      function validateStep(stepIndex) {
+        const step = steps[stepIndex];
 
-            // Shipping section
-            const shippingSection = document.getElementById("shippingSection");
+        // Getting the mandatory and validatable fields inside the current step
+        const allMandFields = zf_MandArray.filter((id) =>
+          step.contains(document.forms.form[id])
+        );
+        const allValidFields = zf_FieldArray.filter((id) =>
+          step.contains(document.forms.form[id])
+        );
 
-            if (isChecked) {
-              shipping.addressType.value = billing.addressType.value;
-              shipping.city.value = billing.city.value;
-              shipping.street1.value = billing.street1.value;
-              shipping.street2.value = billing.street2.value;
-              shipping.state.value = billing.state.value;
-              shipping.country.value = billing.country.value;
-              shipping.zip.value = billing.zip.value;
+        // Saves the original full arrays
+        const oldMandArray = [...zf_MandArray];
+        const oldFieldArray = [...zf_FieldArray];
 
-              // Hide shipping section
-              if (shippingSection) {
-                shippingSection.style.display = "none";
-              }
-            } else {
-              // Clear shipping values
-              shipping.addressType.value = "";
-              shipping.city.value = "";
-              shipping.street1.value = "";
-              shipping.street2.value = "";
-              shipping.state.value = "";
-              shipping.country.value = "";
-              shipping.zip.value = "";
+        // Temporarily sets arrays to current step only
+        zf_MandArray = allMandFields;
+        zf_FieldArray = allValidFields;
 
-              // Showing shipping section
-              if (shippingSection) {
-                shippingSection.style.display = "block";
-              }
-            }
-          });
+        const isValid = zf_CheckMandatory() && zf_ValidCheck();
 
-        //###validations
-        function validateStep(stepIndex) {
-          const step = steps[stepIndex];
+        zf_MandArray = oldMandArray;
+        zf_FieldArray = oldFieldArray;
 
-          // Getting the mandatory and validatable fields inside the current step
-          const allMandFields = zf_MandArray.filter((id) =>
-            step.contains(document.forms.form[id])
-          );
-          const allValidFields = zf_FieldArray.filter((id) =>
-            step.contains(document.forms.form[id])
-          );
+        return isValid;
+      }
 
-          // Saves the original full arrays
-          const oldMandArray = [...zf_MandArray];
-          const oldFieldArray = [...zf_FieldArray];
+      const steps = document.querySelectorAll(".step");
+      let currentStep = 0;
 
-          // Temporarily sets arrays to current step only
-          zf_MandArray = allMandFields;
-          zf_FieldArray = allValidFields;
+      function showStep(index) {
+        steps.forEach((step, i) => {
+          step.classList.toggle("active", i === index);
+        });
 
-          const isValid = zf_CheckMandatory() && zf_ValidCheck();
-
-          zf_MandArray = oldMandArray;
-          zf_FieldArray = oldFieldArray;
-
-          return isValid;
+        const progressItems = document.querySelectorAll("#progressbar li");
+        progressItems.forEach((item, i) => {
+          item.classList.toggle("active", i <= index);
+        });
+        const benefitsBox = document.getElementById("benefits-box");
+        if (benefitsBox) {
+          benefitsBox.style.display = index === 0 ? "block" : "none";
         }
-
-        const steps = document.querySelectorAll(".step");
-        let currentStep = 0;
-
-        function showStep(index) {
-          steps.forEach((step, i) => {
-            step.classList.toggle("active", i === index);
-          });
-
-          const progressItems = document.querySelectorAll("#progressbar li");
-          progressItems.forEach((item, i) => {
-            item.classList.toggle("active", i <= index);
-          });
-          const benefitsBox = document.getElementById("benefits-box");
-          if (benefitsBox) {
-            benefitsBox.style.display = index === 0 ? "block" : "none";
+      }
+      // next button functionality
+      document.querySelectorAll(".next").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (validateStep(currentStep)) {
+            currentStep++;
+            showStep(currentStep);
           }
-        }
-        // next button functionality
-        document.querySelectorAll(".next").forEach((btn) => {
-          btn.addEventListener("click", () => {
-            if (validateStep(currentStep)) {
-              currentStep++;
-              showStep(currentStep);
-            }
-          });
         });
+      });
 
-        // Previous button functionality
+      // Previous button functionality
 
-        document.querySelectorAll(".prev").forEach((btn) => {
-          btn.addEventListener("click", () => {
-            if (currentStep > 0) {
-              currentStep--;
-              showStep(currentStep);
-            }
-          });
+      document.querySelectorAll(".prev").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (currentStep > 0) {
+            currentStep--;
+            showStep(currentStep);
+          }
         });
+      });
 
-        // Show first step on load
-        showStep(currentStep);
+      // Show first step on load
+      showStep(currentStep);
 
-        const fileInput = document.getElementById("fileInput");
-        const fileList = document.getElementById("fileList");
+      const fileInput = document.getElementById("fileInput");
+      const fileList = document.getElementById("fileList");
 
-        fileInput.addEventListener("change", () => {
-          fileList.innerHTML = ""; // Clear previous
+      fileInput.addEventListener("change", () => {
+        fileList.innerHTML = ""; // Clear previous
 
-          Array.from(fileInput.files).forEach((file, index) => {
-            const fileItem = document.createElement("div");
-            fileItem.className = "file-item";
-            fileItem.innerHTML = `
+        Array.from(fileInput.files).forEach((file, index) => {
+          const fileItem = document.createElement("div");
+          fileItem.className = "file-item";
+          fileItem.innerHTML = `
         <span>${file.name}</span>
         <button onclick="removeFile(${index})">🗑️</button>
       `;
-            fileList.appendChild(fileItem);
-          });
+          fileList.appendChild(fileItem);
         });
-
-        function removeFile(index) {
-          const dt = new DataTransfer();
-          const { files } = fileInput;
-
-          Array.from(files).forEach((file, i) => {
-            if (i !== index) dt.items.add(file);
-          });
-
-          fileInput.files = dt.files;
-          fileInput.dispatchEvent(new Event("change"));
-        }
       });
 
-      // Prevent Enter key from submitting the form
-  document.querySelector("form").addEventListener("keydown", function (e) {
-    if (e.key === "Enter") {
-      const type = e.target.type;
-      // allow Enter on textarea or submit button only
-      if (type !== "textarea" && type !== "submit" && type !== "button") {
-        e.preventDefault();
-      }
-    }
-  });
+      function removeFile(index) {
+        const dt = new DataTransfer();
+        const { files } = fileInput;
 
+        Array.from(files).forEach((file, i) => {
+          if (i !== index) dt.items.add(file);
+        });
 
-    </script>
-
-   <script>
-function moveZusatzBelowStreet(streetName, zusatzName) {
-  const streetInput = document.querySelector(`input[name="${streetName}"]`);
-  const zusatzInput = document.querySelector(`input[name="${zusatzName}"]`);
-  if (!streetInput || !zusatzInput) return;
-
-  const streetWrapper = streetInput.closest(".zf-tempFrmWrapper");
-  const zusatzWrapper = zusatzInput.closest(".zf-tempFrmWrapper");
-
-  if (
-    window.innerWidth <= 468 &&
-    streetWrapper &&
-    zusatzWrapper &&
-    streetWrapper !== zusatzWrapper &&
-    zusatzWrapper.previousElementSibling !== streetWrapper
-  ) {
-    streetWrapper.insertAdjacentElement("afterend", zusatzWrapper);
-  }
-}
-
-function applyZusatzPositioning() {
-  moveZusatzBelowStreet("SingleLine4", "SingleLine5");     // Billing
-  moveZusatzBelowStreet("SingleLine10", "SingleLine11");   // Shipping
-}
-
-document.addEventListener("DOMContentLoaded", applyZusatzPositioning);
-window.addEventListener("resize", applyZusatzPositioning);
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const submitBtn = document.getElementById("submitBtn");
-  const requiredFields = [
-    "FileUpload",      // Final step file input 1
-    "FileUpload1",     // Final step file input 2
-    // Add more required fields from final step if needed
-  ];
-
-  function checkRequiredFieldsFilled() {
-    return requiredFields.every(name => {
-      const field = document.querySelector(`[name="${name}"]`);
-      if (!field) return false;
-      if (field.type === "file") {
-        return field.files.length > 0;
-      } else if (field.type === "checkbox" || field.type === "radio") {
-        return field.checked;
-      } else {
-        return field.value.trim() !== "";
+        fileInput.files = dt.files;
+        fileInput.dispatchEvent(new Event("change"));
       }
     });
-  }
 
-  function updateSubmitButtonState() {
-    if (checkRequiredFieldsFilled()) {
-      submitBtn.disabled = false;
-    } else {
-      submitBtn.disabled = true;
+    // Prevent Enter key from submitting the form
+    document.querySelector("form").addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        const type = e.target.type;
+        // allow Enter on textarea or submit button only
+        if (type !== "textarea" && type !== "submit" && type !== "button") {
+          e.preventDefault();
+        }
+      }
+    });
+
+
+  </script>
+
+  <script>
+    function moveZusatzBelowStreet(streetName, zusatzName) {
+      const streetInput = document.querySelector(`input[name="${streetName}"]`);
+      const zusatzInput = document.querySelector(`input[name="${zusatzName}"]`);
+      if (!streetInput || !zusatzInput) return;
+
+      const streetWrapper = streetInput.closest(".zf-tempFrmWrapper");
+      const zusatzWrapper = zusatzInput.closest(".zf-tempFrmWrapper");
+
+      if (
+        window.innerWidth <= 468 &&
+        streetWrapper &&
+        zusatzWrapper &&
+        streetWrapper !== zusatzWrapper &&
+        zusatzWrapper.previousElementSibling !== streetWrapper
+      ) {
+        streetWrapper.insertAdjacentElement("afterend", zusatzWrapper);
+      }
     }
-  }
 
-  // Initial check
-  updateSubmitButtonState();
-
-  requiredFields.forEach(name => {
-    const field = document.querySelector(`[name="${name}"]`);
-    if (field) {
-      field.addEventListener("input", updateSubmitButtonState);
-      field.addEventListener("change", updateSubmitButtonState);
+    function applyZusatzPositioning() {
+      moveZusatzBelowStreet("SingleLine4", "SingleLine5");     // Billing
+      moveZusatzBelowStreet("SingleLine10", "SingleLine11");   // Shipping
     }
-  });
-});
-</script>
 
-  </body>
+    document.addEventListener("DOMContentLoaded", applyZusatzPositioning);
+    window.addEventListener("resize", applyZusatzPositioning);
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const submitBtn = document.getElementById("submitBtn");
+      const requiredFields = [
+        "FileUpload",      // Final step file input 1
+        "FileUpload1",     // Final step file input 2
+        // Add more required fields from final step if needed
+      ];
+
+      function checkRequiredFieldsFilled() {
+        return requiredFields.every(name => {
+          const field = document.querySelector(`[name="${name}"]`);
+          if (!field) return false;
+          if (field.type === "file") {
+            return field.files.length > 0;
+          } else if (field.type === "checkbox" || field.type === "radio") {
+            return field.checked;
+          } else {
+            return field.value.trim() !== "";
+          }
+        });
+      }
+
+      function updateSubmitButtonState() {
+        if (checkRequiredFieldsFilled()) {
+          submitBtn.disabled = false;
+        } else {
+          submitBtn.disabled = true;
+        }
+      }
+
+      // Initial check
+      updateSubmitButtonState();
+
+      requiredFields.forEach(name => {
+        const field = document.querySelector(`[name="${name}"]`);
+        if (field) {
+          field.addEventListener("input", updateSubmitButtonState);
+          field.addEventListener("change", updateSubmitButtonState);
+        }
+      });
+    });
+  </script>
+
+</body>
+
 </html>
