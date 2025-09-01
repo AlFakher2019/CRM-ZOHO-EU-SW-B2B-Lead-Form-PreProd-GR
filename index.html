@@ -1001,7 +1001,7 @@
           <div class="footerbtns">
             <a type="button" class="prev">Zurück</a>
 
-            <button type="submit" class="next" name="submit" id="submitBtn" >
+            <button type="submit" class="next" name="submit" id="submitBtn" disabled>
               Absenden
             </button>
           </div>
@@ -1336,13 +1336,15 @@
     window.addEventListener("resize", applyZusatzPositioning);
   </script>
 
-  <!-- <script>
+  <script>
     document.addEventListener("DOMContentLoaded", function () {
       const submitBtn = document.getElementById("submitBtn");
       const requiredFields = [
         "FileUpload",      // Final step file input 1
         "FileUpload1",     // Final step file input 2
-        // Add more required fields from final step if needed
+        "SingleLine16",
+        "SingleLine17",    // USt-ID
+
       ];
 
       function checkRequiredFieldsFilled() {
@@ -1378,7 +1380,7 @@
         }
       });
     });
-  </script> -->
+  </script>
 
   <script>
 document.addEventListener("DOMContentLoaded", function () {
