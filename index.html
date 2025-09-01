@@ -525,7 +525,7 @@
                   <div class="zf-clearBoth"></div>
                 </div>
                 <div class="zf-tempFrmWrapper zf-large">
-                  <label class="zf-labelName"> EOID </label>
+                  <label class="zf-labelName"> FID </label>
                   <div class="zf-tempContDiv">
                     <span>
                       <input type="text" name="SingleLine3" checktype="c1" value="" maxlength="255" fieldType="1"
@@ -927,6 +927,7 @@
               <div class="zfCol">
                 <div class="zf-tempFrmWrapper zf-large">
                   <label class="zf-labelName"> USt-ID </label>
+                  <em class="zf-important">*</em>
                   <div class="zf-tempContDiv">
                     <span>
                       <input type="text" name="SingleLine16" checktype="c1" value="" maxlength="255" fieldType="1"
@@ -945,7 +946,7 @@
           <div class="zf-tempFrmWrapper">
             <label class="zf-labelName">
               Upload
-              <!-- <em class="zf-important">*</em> -->
+              <em class="zf-important">*</em>
             </label>
             <div class="zf-tempContDiv">
               <input type="file" name="FileUpload" checktype="c1" />
@@ -966,6 +967,7 @@
                 <div class="zf-tempFrmWrapper zf-large">
                   <label class="zf-labelName">
                     Gewerbe- oder Handelsregisternummer
+                    <em class="zf-important">*</em>
                   </label>
                   <div class="zf-tempContDiv">
                     <span>
@@ -985,7 +987,7 @@
           <div class="zf-tempFrmWrapper">
             <label class="zf-labelName">
               Upload
-              <!-- <em class="zf-important">*</em> -->
+              <em class="zf-important">*</em>
             </label>
             <div class="zf-tempContDiv">
               <input type="file" name="FileUpload1" checktype="c1" />
@@ -1017,7 +1019,7 @@
       "Name_First",
       "Name_Last",
       "Email",
-      
+      "SingleLine16",
       "SingleLine",
       "Dropdown",
       "Dropdown1",
@@ -1031,6 +1033,8 @@
       "Dropdown5",
       "SingleLine13",
       "DecisionBox2",
+      "FileUpload",
+      "FileUpload1",
     ];
     var zf_FieldArray = [
       "Name_First",
@@ -1375,6 +1379,67 @@
       });
     });
   </script> -->
+
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const fidInput = document.forms.form["SingleLine3"];
+  const fidError = document.getElementById("SingleLine3_error");
+  const prefix = "QCBDR<1DE";
+
+  if (fidInput) {
+    
+    fidInput.value = prefix;
+
+    
+    fidInput.addEventListener("focus", function () {
+      setTimeout(() => {
+        fidInput.setSelectionRange(prefix.length, prefix.length);
+      }, 0);
+    });
+
+    fidInput.addEventListener("input", function () {
+      
+      if (!fidInput.value.startsWith(prefix)) {
+        fidInput.value = prefix;
+      }
+
+      
+      let digits = fidInput.value.slice(prefix.length).replace(/\D/g, "");
+
+      
+      digits = digits.slice(0, 12);
+
+      fidInput.value = prefix + digits;
+
+     
+      fidInput.setSelectionRange(fidInput.value.length, fidInput.value.length);
+    });
+  }
+
+  
+  const originalValidateStep = window.validateStep;
+  window.validateStep = function(stepIndex) {
+    let isValid = originalValidateStep(stepIndex);
+
+    const steps = document.querySelectorAll(".step");
+    const step = steps[stepIndex];
+
+    if (fidInput && step.contains(fidInput)) {
+      const digits = fidInput.value.slice(prefix.length);
+      if (digits.length !== 12) {
+        fidError.style.display = "block";
+        fidError.innerText = "FID must have exactly 12 digits after QCBDR<1DE";
+        isValid = false;
+      } else {
+        fidError.style.display = "none";
+      }
+    }
+
+    return isValid;
+  };
+});
+</script>
+
 
 </body>
 
