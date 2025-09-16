@@ -712,6 +712,18 @@
                     </div>
                     <div class="zf-clearBoth"></div>
                   </div>
+                   <div class="zf-tempFrmWrapper  zf-large " style="display: none;"><label class="zf-labelName">
+                                            Land
+                                        </label>
+                                        <div class="zf-tempContDiv">
+                                            <span>
+                                                <input type="text" name="SingleLine8" checktype="c1" value=""
+                                                    maxlength="255" fieldType=1 placeholder="" /> </span>
+                                            <p id="SingleLine8_error" class="zf-errorMessage" style="display: none;">
+                                                Invalid value</p>
+                                        </div>
+                                        <div class="zf-clearBoth"></div>
+                                    </div>
                   <div class="zf-tempFrmWrapper zf-large">
                     <label class="zf-labelName"> Zusatz </label>
                     <div class="zf-tempContDiv">
@@ -1303,12 +1315,106 @@
           }
         }
 
+        
         return isValid;
       };
     });
   </script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const billingCountrySelect = document.forms.form["Dropdown4"];
+  const shippingCountrySelect = document.forms.form["Dropdown5"];
+  const decisionBox = document.getElementById("DecisionBox");
+  const shippingSection = document.getElementById("shippingSection");
 
+  // Save original limited shipping country options for restoration
+  const originalShippingOptions = Array.from(shippingCountrySelect.options).map(opt => ({
+    value: opt.value,
+    text: opt.text
+  }));
+
+  function setShippingOptionsToBilling() {
+    shippingCountrySelect.innerHTML = "";
+    Array.from(billingCountrySelect.options).forEach(opt => {
+      shippingCountrySelect.add(opt.cloneNode(true));
+    });
+  }
+
+  function restoreOriginalShippingOptions() {
+    shippingCountrySelect.innerHTML = "";
+    originalShippingOptions.forEach(optData => {
+      let newOption = document.createElement("option");
+      newOption.value = optData.value;
+      newOption.text = optData.text;
+      shippingCountrySelect.add(newOption);
+    });
+  }
+
+  function syncShippingCountryAndToggleFields() {
+    if (decisionBox.checked) {
+      setShippingOptionsToBilling();
+      shippingCountrySelect.value = billingCountrySelect.value;
+      if (shippingSection) shippingSection.style.display = "none";
+    } else {
+      restoreOriginalShippingOptions();
+      shippingCountrySelect.value = "";
+      if (shippingSection) shippingSection.style.display = "block";
+    }
+    // Trigger change event so validation/UI updates
+    shippingCountrySelect.dispatchEvent(new Event('change'));
+  }
+
+  // Initial sync on page load
+  syncShippingCountryAndToggleFields();
+
+  // Sync when checkbox toggled
+  decisionBox.addEventListener("change", syncShippingCountryAndToggleFields);
+
+  // Sync if billing country changes while checkbox is checked
+  billingCountrySelect.addEventListener("change", () => {
+    if (decisionBox.checked) {
+      syncShippingCountryAndToggleFields();
+    }
+  });
+});
+
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const billingCountrySelect = document.forms.form["Dropdown4"];
+  const shippingCountrySelect = document.forms.form["Dropdown5"];
+  const shippingCountryHidden = document.forms.form["SingleLine8"]; 
+  const decisionBox = document.getElementById("DecisionBox");
+
+  function updateShippingCountryHidden() {
+    if (decisionBox.checked) {
+     
+      shippingCountryHidden.value = billingCountrySelect.value;
+    } else {
+      
+      shippingCountryHidden.value = shippingCountrySelect.value;
+    }
+  }
+
+  
+  updateShippingCountryHidden();
+
+  
+  decisionBox.addEventListener("change", updateShippingCountryHidden);
+
+  
+  billingCountrySelect.addEventListener("change", () => {
+    if (decisionBox.checked) updateShippingCountryHidden();
+  });
+
+
+  shippingCountrySelect.addEventListener("change", () => {
+    if (!decisionBox.checked) updateShippingCountryHidden();
+  });
+});
+
+</script>
 </body>
 
 </html>
